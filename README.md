@@ -71,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Netlify
 
-https://olharums-charity-organization.netlify.app/
+https://olharums-test-task.netlify.app/
