@@ -1,0 +1,867 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  font-family: "Geometria";
+  font-size: 14pt;
+}
+input[type="number"]:focus {
+  outline-color: #363b5d;
+}
+input[type="password"] {
+  font-family: "Geometria";
+  font-size: 14pt;
+}
+input[type="password"]:focus {
+  outline-color: #363b5d;
+}
+.helpKinds .helpKindSelected h2 {
+  color: #9c5d9a;
+}
+.helpKindSelected .iconContainer {
+  border-color: #9c5d9a;
+  background-color: #9c5d9a;
+}
+.helpKindSelected .iconContainer .icon path {
+  fill: #9c5d9a;
+  stroke: white;
+}
+.payMethods .selectedMethod {
+  background-color: #9c5d9a;
+}
+.payMethods .selectedMethod div {
+  background-color: #9c5d9a;
+}
+.no-display {
+  display: none;
+}
+.no-display div {
+  display: none;
+}
+body {
+  background-color: #7d89a2;
+}
+body input[type="text"] {
+  font-family: "Geometria";
+  font-size: 14pt;
+}
+body input[type="text"]:focus {
+  outline-color: #363b5d;
+}
+#formContainer {
+  margin: auto;
+  padding-top: 0.1px;
+  width: 95%;
+  height: 85%;
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  justify-content: center;
+}
+#buttonsContainer {
+  margin: -25px 0 0 45px;
+}
+#buttonsContainer button {
+  cursor: pointer;
+  height: 45px;
+  width: 125px;
+  font-family: "Geometria Bold";
+  font-size: 11pt;
+  letter-spacing: 0.01px;
+  border: 3px solid #363b5d;
+  border-radius: 5px;
+  color: #363b5d;
+  background-color: white;
+}
+#buttonsContainer button:hover {
+  background-color: #dbddea;
+}
+#buttonsContainer button.selected {
+  color: white;
+  background-color: #363b5d;
+}
+#buttonsContainer #individual {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#buttonsContainer #legalEntity {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+#inputsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+  padding: 10px 0px 0 80px;
+}
+#inputsContainer #inputSet {
+  margin-top: 35px;
+}
+#inputsContainer #inputSet label {
+  color: #949ba4;
+  font-family: "Geometria";
+  font-size: 11pt;
+  display: block;
+  text-align: left;
+}
+#inputsContainer #inputSet input.long {
+  width: 450px;
+}
+#inputsContainer #inputSet input.short {
+  width: 210px;
+}
+#inputsContainer #inputSet input {
+  display: block;
+  background-color: #f3f7fa;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+}
+#inputsContainer #inputSet #singleInputContainer {
+  margin-bottom: 25px;
+}
+#inputsContainer #inputSet #singleInputContainer label {
+  line-height: 2em;
+}
+#inputsContainer #inputSet #inputLogoNameCompany {
+  display: flex;
+}
+#inputsContainer #inputSet #inputLogoNameCompany input[type="file"] {
+  padding-left: 65px;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  border: none;
+}
+#inputsContainer #inputSet #inputLogoNameCompany label#logoLabel {
+  cursor: pointer;
+  color: #5d9be5;
+  font-weight: 600;
+}
+#containerShortInputs {
+  display: flex;
+}
+#containerShortInputs div {
+  display: inline-flex;
+  margin-right: 12px;
+}
+.helpKinds {
+  border-color: #c5d5e6;
+}
+.helpKinds h2,
+.helpKinds .icon {
+  color: #c5d5e6;
+}
+div.helpKinds {
+  width: 82.5%;
+  margin-left: 175px;
+  margin-top: 42px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+div.helpKind {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  align-content: center;
+}
+div.helpKind h2 {
+  margin-left: 5px;
+}
+div.helpKind:hover .iconContainer {
+  border-color: #9c5d9a;
+  background-color: #9c5d9a;
+}
+div.helpKind:hover .iconContainer .icon path {
+  fill: #9c5d9a;
+  stroke: white;
+}
+div.helpKind:hover h2 {
+  color: #9c5d9a;
+}
+.iconContainer {
+  display: grid;
+  margin-right: 10px;
+  align-content: center;
+  height: 82px;
+  width: 82px;
+  border: 2px solid #c5d5e6;
+  border-radius: 15px;
+  text-align: center;
+  justify-content: center;
+}
+.iconContainer .icon {
+  height: 50px;
+  width: 50px;
+}
+.iconContainer .icon path {
+  stroke-width: 20px;
+  fill: white;
+}
+.file-upload {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.financeHelp {
+  text-align: left;
+  display: flex;
+  padding: 20px;
+}
+.financeHelp h3 {
+  margin: -7px 0 7px 2px;
+  color: #949ba4;
+}
+.financeHelp p,
+.financeHelp h2,
+.financeHelp #cardForm h3 {
+  color: white;
+}
+.payMethods {
+  display: grid;
+  grid-template-columns: repeat(3, 183px);
+  grid-template-rows: repeat(2, 92px);
+  grid-column-gap: 22px;
+  grid-row-gap: 20px;
+}
+.payMethods div {
+  background-color: #c5d5e6;
+  border-radius: 10px;
+  padding: 5px;
+}
+.payMethods div:hover {
+  background-color: #9c5d9a;
+}
+.payMethods div:hover div {
+  background-color: #9c5d9a;
+}
+.payMethods .icon path {
+  fill: white;
+}
+.payMethods #cardMethod {
+  padding: 7px;
+}
+.payMethods #cardMethod .icon {
+  margin: 5px 0 0 25px;
+}
+.payMethods #cardMethod .icon-45 {
+  height: 45px;
+  width: 45px;
+}
+.payMethods #cardMethod .icon-50 {
+  height: 50px;
+  width: 50px;
+}
+.payMethods #cardMethod p {
+  margin: 2px 0 0 12px;
+}
+.payMethods p {
+  font-size: 10pt;
+  transform: scaleX(0.95);
+  transform-origin: 0 0;
+}
+.payMethods #privat24Method h2 {
+  margin: 20px 0 0 37px;
+  font-family: "Gilroy ExtraBold";
+}
+.payMethods #privat24Method p {
+  margin: 22px 0 0 58px;
+}
+.payMethods #ATMMethod .icon {
+  width: 40px;
+  height: 40px;
+  margin: 10px 0 0 63px;
+}
+.payMethods #ATMMethod .icon path {
+  stroke: white;
+  fill: transparent;
+}
+.payMethods #ATMMethod p {
+  margin: 10px 0 0 30px;
+}
+.payMethods #webMoneyMethod div {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 15px 0 0 2px;
+}
+.payMethods #webMoneyMethod div h3 {
+  transform: scaleX(0.9);
+  margin: 3px 0 0 0;
+  font-size: 9pt;
+  font-family: "Geometria Light";
+  color: white;
+}
+.payMethods #webMoneyMethod div .icon {
+  width: 23px;
+  height: 23px;
+  margin: 0;
+}
+.payMethods #webMoneyMethod p {
+  margin: 15px 0 0 55px;
+}
+.payMethods #payPalMethod .icon {
+  height: 30px;
+  width: 30px;
+  margin: 20px 0 0 71px;
+}
+.payMethods #payPalMethod p {
+  margin: 10px 0 0 67px;
+}
+#cardContainer #cardForm {
+  background-color: #c5d5e6;
+  border-radius: 15px;
+  padding: 20px;
+}
+#cardContainer #cardForm:hover {
+  background-color: #9c5d9a;
+}
+#cardContainer #cardForm input {
+  margin: 0;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+#cardContainer #cardForm .cardNumber h3 {
+  margin: 0 0 0 10px;
+}
+#cardContainer #cardForm .cardNumber div {
+  margin: 5px 0 0 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 8px;
+}
+#cardContainer #cardForm .cardNumber div input {
+  width: 75px;
+}
+#cardContainer #cardForm .cardInfo {
+  margin: 35px 0 0 8px;
+  display: flex;
+  justify-content: space-between;
+}
+#cardContainer #cardForm .cardInfo input {
+  width: 135px;
+  margin: 0 5px 0 0;
+}
+h1 {
+  color: #363b5d;
+  font-family: "Geometria ExtraBold";
+  margin-top: 37px;
+  margin-left: 4px;
+  font-size: 50pt;
+  letter-spacing: 0.95px;
+  text-align: center;
+}
+h1#titleHelpKinds {
+  margin-top: 33px;
+  margin-left: 90px;
+  margin-bottom: 0;
+}
+h2 {
+  color: #363b5d;
+  font-family: "Geometria Bold";
+  font-size: 16pt;
+  transform: scaleX(0.91);
+  line-height: 1em;
+}
+p {
+  margin: 10px 0 0 200px;
+  font-family: "Gilroy Light";
+  font-size: 16pt;
+  transform: scaleX(0.91);
+  transform-origin: 0 0;
+}
+h3 {
+  font-family: "Geometria Bold";
+  font-size: 11pt;
+}
+#buttonHelp {
+  transition-duration: 1s;
+  cursor: pointer;
+  margin: 55px 0 90px 0;
+  height: 65px;
+  width: 320px;
+  border-radius: 10px;
+  font-family: "Geometria ExtraBold";
+  font-size: 16pt;
+  color: white;
+  border: none;
+  background: linear-gradient(to right, #e53656, #8c69ae);
+}
+#buttonHelp:hover {
+  margin: 50px 0 95px 0;
+  box-shadow: 0 0 10px 10px #f9c8d0;
+}
+#subtitle {
+  color: #363b5d;
+  margin: 9px 0 0 200px;
+}
+#exitButton {
+  width: 60px;
+  height: 60px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: -5px 0 0 93.5%;
+}
+#exitButton h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 80pt;
+  font-weight: 50;
+  color: #576a8f;
+  font-family: "Gilroy Light";
+}
+#exitButton h1:hover {
+  color: red;
+}
+.helpKindFrame {
+  position: relative;
+  margin: 25px 0 0 147px;
+  width: 85%;
+  border: 2px solid #c5d5e6;
+  border-radius: 15px;
+}
+.helpKindFrame::before,
+.helpKindFrame::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 16px solid transparent;
+  border-bottom: 20px solid #c5d5e6;
+  top: -22px;
+}
+.helpKindFrame::after {
+  border-bottom: 20px solid white;
+  top: -19px;
+}
+@font-face {
+  font-family: "Geometria ExtraBold";
+  src: local("Geometria ExtraBold"), url(fonts/Geometria/Geometria-ExtraBold.woff) format("woff");
+}
+@font-face {
+  font-family: "Geometria Bold";
+  src: local("Geometria Bold"), url(fonts/Geometria/Geometria-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "Geometria";
+  src: local("Geometria"), url(fonts/Geometria/Geometria.woff) format("woff");
+}
+@font-face {
+  font-family: "Geometria Light";
+  src: local("Geometria Light"), url(fonts/Geometria/Geometria-Light.woff) format("woff");
+}
+@font-face {
+  font-family: "Gilroy Light";
+  src: local("Gilroy Light"), url(fonts/Gilroy-FREE/Gilroy-Light.otf) format("opentype");
+}
+@font-face {
+  font-family: "Gilroy ExtraBold";
+  src: local("Gilroy ExtraBold"), url(fonts/Gilroy-FREE/Gilroy-ExtraBold.otf) format("opentype");
+}
+@media (min-width: 2500px) {
+  .donation.helpKindFrame::before,
+  .donation.helpKindFrame::after {
+    left: 30%;
+  }
+  .do.helpKindFrame::before,
+  .do.helpKindFrame::after {
+    left: 3%;
+  }
+  .clothes.helpKindFrame::before,
+  .clothes.helpKindFrame::after {
+    left: 58%;
+  }
+  .volunteering.helpKindFrame::before,
+  .volunteering.helpKindFrame::after {
+    left: 88%;
+  }
+  #cardContainer {
+    width: 30%;
+    margin: 2px 0 0 40%;
+  }
+  #cardContainer #cardForm {
+    width: 70%;
+  }
+}
+@media (max-width: 2500px) {
+  .donation.helpKindFrame::before,
+  .donation.helpKindFrame::after {
+    left: 30%;
+  }
+  .do.helpKindFrame::before,
+  .do.helpKindFrame::after {
+    left: 3%;
+  }
+  .clothes.helpKindFrame::before,
+  .clothes.helpKindFrame::after {
+    left: 58%;
+  }
+  .volunteering.helpKindFrame::before,
+  .volunteering.helpKindFrame::after {
+    left: 88%;
+  }
+  #cardContainer {
+    width: 30%;
+    margin: 2px 0 0 40%;
+  }
+  #cardContainer #cardForm {
+    width: 75%;
+  }
+}
+@media (max-width: 2250px) {
+  .donation.helpKindFrame::before,
+  .donation.helpKindFrame::after {
+    left: 30%;
+  }
+  .do.helpKindFrame::before,
+  .do.helpKindFrame::after {
+    left: 3%;
+  }
+  .clothes.helpKindFrame::before,
+  .clothes.helpKindFrame::after {
+    left: 56%;
+  }
+  .volunteering.helpKindFrame::before,
+  .volunteering.helpKindFrame::after {
+    left: 85%;
+  }
+  #cardContainer {
+    width: 30%;
+    margin: 2px 0 0 30%;
+  }
+  #cardContainer #cardForm {
+    width: 75%;
+  }
+}
+@media (max-width: 1900px) {
+  .donation.helpKindFrame::before,
+  .donation.helpKindFrame::after {
+    left: 28%;
+  }
+  .clothes.helpKindFrame::before,
+  .clothes.helpKindFrame::after {
+    left: 55%;
+  }
+  .volunteering.helpKindFrame::before,
+  .volunteering.helpKindFrame::after {
+    left: 83%;
+  }
+  #cardContainer {
+    width: 32%;
+    margin: 2px 0 0 20%;
+  }
+  #cardContainer #cardForm {
+    width: 85%;
+  }
+}
+@media (max-width: 1570px) {
+  .clothes.helpKindFrame::before,
+  .clothes.helpKindFrame::after {
+    left: 52%;
+  }
+  .volunteering.helpKindFrame::before,
+  .volunteering.helpKindFrame::after {
+    left: 80%;
+  }
+  .helpKindFrame {
+    margin-left: 10.5%;
+  }
+  #cardContainer {
+    width: 31%;
+    margin: 2px 0 0 15.5%;
+  }
+  #cardContainer #cardForm {
+    width: 98%;
+  }
+}
+@media (max-width: 1451px) {
+  #cardContainer {
+    margin: 2px 0 0 10%;
+  }
+  #inputsContainer {
+    padding: 10px 0px 0 0px;
+  }
+}
+@media (max-width: 1415px) {
+  .donation.helpKindFrame::before,
+  .donation.helpKindFrame::after {
+    left: 33%;
+  }
+  .do.helpKindFrame::before,
+  .do.helpKindFrame::after {
+    left: 10%;
+  }
+  .clothes.helpKindFrame::before,
+  .clothes.helpKindFrame::after {
+    left: 58%;
+  }
+  .volunteering.helpKindFrame::before,
+  .volunteering.helpKindFrame::after {
+    left: 85%;
+  }
+  #exitButton {
+    margin-left: 85%;
+  }
+  #formContainer {
+    width: 100%;
+    height: 85%;
+  }
+  .helpKindFrame {
+    margin-left: 6%;
+  }
+  .payMethods {
+    grid-column-gap: 11px;
+    grid-row-gap: 10px;
+  }
+  .payMethods div {
+    padding: 0;
+  }
+  #cardContainer {
+    margin: 2px 0 0 8%;
+  }
+  #cardContainer #cardForm {
+    width: 100%;
+  }
+  #cardContainer #cardForm .cardNumber div input {
+    width: 65px;
+  }
+  #cardContainer #cardForm .cardInfo input {
+    width: 95px;
+  }
+  #inputsContainer {
+    padding: 5px 0px 0 0px;
+  }
+  #inputsContainer #inputSet input.long {
+    width: 380px;
+  }
+  #inputsContainer #inputSet input.short {
+    width: 175px;
+  }
+}
+@media (max-width: 1200px) {
+  .donation.helpKindFrame::before,
+  .donation.helpKindFrame::after {
+    left: 27%;
+  }
+  .do.helpKindFrame::before,
+  .do.helpKindFrame::after {
+    left: 3%;
+  }
+  .clothes.helpKindFrame::before,
+  .clothes.helpKindFrame::after {
+    left: 53%;
+  }
+  .volunteering.helpKindFrame::before,
+  .volunteering.helpKindFrame::after {
+    left: 83%;
+  }
+  #exitButton {
+    margin-left: 90%;
+  }
+  div.helpKinds {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .financeHelp {
+    padding-bottom: 50px;
+  }
+  .helpKindFrame {
+    height: fit-content;
+    margin: 25px 0 0 5%;
+  }
+  .helpKindFrame .payMethods {
+    grid-column-gap: 5%;
+    grid-row-gap: 3%;
+    grid-template-columns: repeat(2, 183px);
+    grid-template-rows: repeat(3, 92px);
+  }
+  #cardContainer {
+    margin: 2px 0 0 15%;
+  }
+  #cardContainer #cardForm .cardNumber div input {
+    width: 90%;
+  }
+  #cardContainer #cardForm .cardInfo {
+    padding: 0;
+  }
+  #cardContainer #cardForm .cardInfo input {
+    width: 70%;
+    margin: 0 0 0 0;
+  }
+  #inputsContainer {
+    padding: 5px 0px 0 0;
+  }
+  #inputsContainer #inputSet input.long {
+    width: 85%;
+  }
+  #inputsContainer #inputSet input.short {
+    width: 75%;
+  }
+  #inputsContainer #inputSet #inputLogoNameCompany {
+    margin: -30px 0 0 0;
+  }
+  #inputsContainer #inputSet #inputLogoNameCompany input[type="file"] {
+    padding-left: 0px;
+    margin: 30px 0 0 0;
+  }
+}
+@media (max-width: 1000px) {
+  div#helpKind {
+    width: fit-content;
+  }
+  div.helpKinds {
+    width: 90%;
+    margin-left: 13%;
+    display: grid;
+    grid-row-gap: 5%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .helpKindFrame {
+    margin: 25px 10px 0 8%;
+  }
+  .helpKindFrame::before,
+  .helpKindFrame::after {
+    display: none;
+  }
+  .financeHelp {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    grid-row-gap: 5%;
+    justify-items: center;
+  }
+  .financeHelp .payMethods {
+    grid-template-columns: repeat(2, 183px);
+    grid-template-rows: repeat(3, 92px);
+  }
+  #cardContainer {
+    width: 40%;
+    margin: 2px 0 0 5%;
+  }
+  #inputsContainer {
+    width: 80%;
+    margin: 0 auto;
+    align-items: flex-start;
+    padding: 5px 0px 0 7%;
+  }
+  #inputsContainer #inputSet input.long {
+    width: 85%;
+  }
+  #inputsContainer #inputSet input.short {
+    width: 75%;
+  }
+  #inputsContainer #inputSet #inputLogoNameCompany {
+    margin: 0 0 30px 0;
+    display: block;
+  }
+  #inputsContainer #inputSet #inputLogoNameCompany input[type="file"] {
+    padding-left: 0px;
+    margin: -30px 0 0 0;
+  }
+  h1#titleHelpKinds {
+    margin-left: 1%;
+  }
+  #subtitle {
+    margin-left: 10%;
+  }
+}
+@media (max-width: 750px) and (orientation: portrait) {
+  div.helpKinds {
+    width: 90%;
+    margin-left: 13%;
+    display: grid;
+    grid-row-gap: 20%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  div.helpKinds .iconContainer {
+    margin-right: 3px;
+    height: 40px;
+    width: 40px;
+  }
+  div.helpKinds .iconContainer .icon {
+    height: 25px;
+    width: 25px;
+  }
+  div.helpKinds h2 {
+    margin: 0;
+    padding: 0;
+  }
+  #cardContainer {
+    width: 60%;
+    margin: 15px 0 0 0;
+  }
+  #inputsContainer {
+    display: block;
+    padding: 5px 0px 0 15%;
+  }
+  #inputsContainer #inputSet input.long {
+    width: 85%;
+  }
+  #inputsContainer #inputSet input.short {
+    width: 85%;
+  }
+  #inputsContainer #inputSet #inputLogoNameCompany {
+    margin: 0 0 30px 0;
+    display: block;
+  }
+  #inputsContainer #inputSet #inputLogoNameCompany input[type="file"] {
+    padding-left: 0px;
+    margin: -30px 0 0 0;
+  }
+}
+@media (max-width: 545px) and (orientation: portrait) {
+  div.helpKinds {
+    width: 70%;
+    margin-left: 5%;
+  }
+  .helpKindFrame {
+    margin: 30px 3px 0 7%;
+  }
+  #cardContainer {
+    width: 80%;
+    margin: 15px 0 0 -25px;
+  }
+}
+@media (max-width: 500px) and (orientation: portrait) {
+  #exitButton {
+    margin-left: 75%;
+  }
+  div.helpKinds {
+    margin-left: 25%;
+    margin-bottom: 140px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .helpKindFrame .payMethods {
+    grid-template-columns: repeat(1, 183px);
+    grid-template-rows: repeat(5, 92px);
+  }
+  #cardContainer {
+    width: 95%;
+    margin: 45px 0 0 -40px;
+  }
+  #inputsContainer {
+    width: 95%;
+    padding: 5px 0px 0 8%;
+  }
+  h1 {
+    font-size: 35pt;
+  }
+  #buttonsContainer {
+    margin-left: 2%;
+  }
+  #buttonHelp {
+    width: 70%;
+  }
+}
